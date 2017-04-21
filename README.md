@@ -1,24 +1,19 @@
-# README
+This is Programming Assignemt for Cookpad Inc's internship.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Work Done
+User Authentication 
+User Image Upload, Update and Delete
+User Comment under the image:
 
-Things you may want to cover:
 
-* Ruby version
+Programming Language: Ruby on Rails 
+for Authentication: devise
+for image upload: mini_magick
+Design : Bootstrap static theme
 
-* System dependencies
 
-* Configuration
+Contact: 
+gmail  : khinezarthwe.ms@gmail.com
+github : @khinezarthwe
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
