@@ -1,0 +1,22 @@
+<% if current_user %>
+	
+	<h3><%= current_user.email %> uploaded <%=current_user.images.count %>photos.</h3>
+	<div class="row">
+  		<div class="col-xs-6 col-md-3">
+	  		<% current_user.images.each do |image| %>
+	  			   <%= link_to (image_tag image.picture.url, :size => "150x150"), image_path(image), class: 'thumbnail'%>
+	  		<% end %> 
+  		</div>
+	</div>
+
+<% else %>
+	<div class="jumbotron">
+			<h2>Welcome to My Web Assignment App!</h2>
+		<p class="lead">
+				You can register an account, sign in and sign out.
+				as an addition can upload and delete an image.
+		</p>
+    </div>
+
+	<center><%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %></center>
+<% end %>
